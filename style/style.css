@@ -1,0 +1,97 @@
+*{
+    padding: 0; /* makes padding and margin universally zero*/
+    margin: 0;
+    box-sizing: border-box; /* makes width and height easier to control.*/
+    font-family: 'Inter';
+    
+}
+
+body{
+   
+    background: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh; /*The page will always be atleast full screen in height*/
+    padding: 20px; /*added some breathing room around corners*/
+    overflow-y: auto;  /* we set background blak, used display:flex and align-item to center verically and justify content to center horizontally.*/
+}
+
+.card{
+    
+    background: rgba(59, 58, 58, 0.488); /*used a duller shade of black to set card aside from background which is pitch black*/
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /*I wanted buttons to appear stacked, so I used flex-direction*/
+    align-items: center; /*center vertically*/
+    padding: 10px;
+    border-radius: 10px; /*rounded corners*/
+    gap: 10px; /*space between each item*/
+    height: auto;
+
+    width: 100%;
+    max-width: 370px;
+    max-height: 90vh;
+    min-height: auto;
+    overflow-y: auto;
+    
+}
+
+.avatar{
+    border-radius: 200px;
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    object-position: center;
+    background:black;
+
+}
+
+h1,button,p{
+    background: none;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.yellow{
+    color: hsl(75, 94%, 57%);
+}
+
+button{
+    display: flex;
+    height: 50px;
+    width: 90%;
+    background: rgba(59, 58, 58, 0.488);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 0.3 ease;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+}
+
+button:hover{
+    background:hsl(75, 94%, 57%); 
+    color: black;
+}
+
+@media(max-width:480px){
+    .card{
+        padding: 15px;
+        gap: 12px;
+        min-width: auto;
+    }
+
+    .avatar{
+        height: 100px;
+        width: 100px;
+    }
+
+    button{
+        height: 45px;
+        font-size: 0.9rem;
+    }
+}
+
