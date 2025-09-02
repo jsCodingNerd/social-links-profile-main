@@ -28,7 +28,7 @@ body{
     border-radius: 10px; /*rounded corners*/
     gap: 10px; /*space between each item*/
     height: auto;
-
+    margin-top:100px;
     width: 100%;
     max-width: 370px;
     max-height: 90vh;
